@@ -18,6 +18,7 @@ public class FindMaximumRepeatedWord {
 
         //create an hasmap with strings and their corresponding occurrences.
         for (String word : splitStringList) {
+            String s = String.valueOf(word.charAt(0));
             if (!excludedWords.contains(word)) {
                 wordCount.put(word, wordCount.get(word) == null ? 1 : wordCount.get(word) + 1);
             }
